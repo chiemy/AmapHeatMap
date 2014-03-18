@@ -25,9 +25,9 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.support.v4.util.LongSparseArray;
 
-import com.amap.api.maps2d.model.LatLng;
-import com.amap.api.maps2d.model.Tile;
-import com.amap.api.maps2d.model.TileProvider;
+import com.amap.api.maps.model.LatLng;
+import com.amap.api.maps.model.Tile;
+import com.amap.api.maps.model.TileProvider;
 import com.example.amapdemo.geomtry.Bounds;
 import com.example.amapdemo.geomtry.Point;
 import com.example.amapdemo.pointquadtree.PointQuadTree;
@@ -52,8 +52,8 @@ public class HeatmapTileProvider implements TileProvider {
      * Array of colors, represented by ints.
      */
     private static final int[] DEFAULT_GRADIENT_COLORS = {
-        Color.rgb(102, 225, 0),
-        Color.rgb(255, 0, 0)
+    	Color.rgb(102, 225, 0),
+    	Color.rgb(255, 0, 0)
     };
 
     /**
@@ -62,7 +62,7 @@ public class HeatmapTileProvider implements TileProvider {
      * These should be a sorted array of floats in the interval [0, 1].
      */
     private static final float[] DEFAULT_GRADIENT_START_POINTS = {
-        0.2f, 1f
+        0.1f, 1f
     };
 
     /**
@@ -80,7 +80,7 @@ public class HeatmapTileProvider implements TileProvider {
     /**
      * Tile dimension, in pixels.
      */
-    private static final int TILE_DIM = 512;
+    private static final int TILE_DIM = 256;
 
     /**
      * Assumed screen size (pixels)

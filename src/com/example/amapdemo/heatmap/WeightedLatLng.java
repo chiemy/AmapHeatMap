@@ -16,7 +16,7 @@
 
 package com.example.amapdemo.heatmap;
 
-import com.amap.api.maps2d.model.LatLng;
+import com.amap.api.maps.model.LatLng;
 import com.example.amapdemo.geomtry.Point;
 import com.example.amapdemo.pointquadtree.PointQuadTree.Item;
 import com.example.amapdemo.projection.SphericalMercatorProjection;
